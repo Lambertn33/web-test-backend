@@ -1,7 +1,7 @@
 import express, { Express } from "express";
-import cors from 'cors';
 import bodyParser from "body-parser";
 import loginRoute from "./routes/auth.route";
+import cors  from "cors";
 
 const main = () => {
   const app: Express = express();
@@ -9,6 +9,7 @@ const main = () => {
 
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
+
   app.use(cors());
 
   app.use("/api", loginRoute);  
