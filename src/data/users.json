@@ -1,20 +1,17 @@
-{
-    "users": [
-      {
-        "username": "user 1",
-        "email": "user1@gmail.com",
-        "password": "password1"
-      },
-      {
-        "username": "user 2",
-        "email": "user2@gmail.com",
-        "password": "password2"
-      },
-      {
-        "username": "user 3",
-        "email": "user3@gmail.com",
-        "password": "password3"
-      }
-    ]
+[
+  {
+    "names": "user 1",
+    "email": "user1@gmail.com",
+    "password": "password1"
+  },
+  {
+    "names": "user 2",
+    "email": "user2@gmail.com",
+    "password": "password2"
+  },
+  {
+    "names": "user 3",
+    "email": "user3@gmail.com",
+    "password": "password3"
   }
-  
+]

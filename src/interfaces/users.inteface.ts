@@ -1,5 +1,7 @@
-export interface User {
-    names: String,
-    email: String,
-    password: String
+export interface AuthInputs {
+  email: String;
+  password: String;
+}
+export interface UserInterface extends AuthInputs {
+  names: String;
 }
