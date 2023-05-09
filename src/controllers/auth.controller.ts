@@ -5,7 +5,7 @@ import { generateToken } from "../helpers/users.helpers";
 
 export const loginFunction = (req: Request, res: Response) => {
   const { email, password }: AuthInputs = req.body;
-  const user = users.find((user) => user.email == email) as UserInterface;
+  const user = users.find((user) => user.email === email) as UserInterface;
   if (!user) return res.status(400).json({ message: "invalid email" });
 
   if (user.password !== password)
